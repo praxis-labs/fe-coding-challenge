@@ -19,7 +19,7 @@ The table must be paginated and just simply display data. Don't worry about the 
 
 We encourage you not to spend over an hour on this assignment. To speed up development time, we've configured Material UI and set up the API interface.
 
-### Deliverables
+## Deliverables
 
 At the end of this challenge you will have a Pull Request on your forked repo with the user table component(s) and unit tests.
 

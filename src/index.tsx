@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ApolloProvider } from '@apollo/client';
+import Members from './components/Members';
 import reportWebVitals from './reportWebVitals';
+import theme from './theme/index';
+import apolloClient from './common/graphql/clientConnection';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <ApolloProvider client={apolloClient}>
+        <Members />
+      </ApolloProvider>
+    </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
