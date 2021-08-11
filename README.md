@@ -8,9 +8,9 @@ The challenge is designed not to test Typescript knowledge, but to test how you 
 
 Use the existing boilerplate to create a table that displays the user data from the API.
 
-![Manage Members Menu Closed](./images/Members Table Menu Closed.png)
+![Manage Members Menu Closed](https://github.com/praxis-labs/fe-coding-challenge/blob/main/images/Members%20Table%20Menu%20Closed.png)
 
-![Manage Members Menu Open](./images/Members Table Menu Open.png)
+![Manage Members Menu Open](https://github.com/praxis-labs/fe-coding-challenge/blob/main/images/Members%20Table%20Menu%20Open.png)
 
 The table must simply display all members in featured in `data.json` and include pagination. Don't worry about the ability to edit or delete a user; the menu options under the three dot icon are just for show.
 
