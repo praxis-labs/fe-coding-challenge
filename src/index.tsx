@@ -2,20 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { ApolloProvider } from '@apollo/client';
 import Members from './components/Members';
 import reportWebVitals from './reportWebVitals';
 import theme from './theme/index';
-import apolloClient from './common/graphql/clientConnection';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <ApolloProvider client={apolloClient}>
-        <Members />
-      </ApolloProvider>
+      <Members />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
