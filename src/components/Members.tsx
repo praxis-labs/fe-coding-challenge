@@ -1,12 +1,28 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
 import { useTheme } from '@material-ui/core/styles';
-import { GET_ORGANIZATION_MEMBERS } from '../common/graphql/queries/getOrganizationMembers';
+import {
+  Grid,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TablePagination,
+  TableRow,
+  Typography,
+  Paper,
+  Box,
+  IconButton,
+  TextField,
+  ClickAwayListener,
+  MenuItem,
+  MenuList,
+  Popper,
+} from '@material-ui/core';
+import EllipsisIcon from '@material-ui/icons/MoreHoriz';
+import memberData from './data.json';
 
 const Members: React.FC = () => {
-  const { data, loading } = useQuery(GET_ORGANIZATION_MEMBERS);
-  const { organization } = data?.currentUser ?? {};
-  const { users } = organization; // Use src/common/interfaces.ts for context of the user structure.
+  // Use src/common/interfaces.ts for more context of the data structure.
   const theme = useTheme();
 
   return <div>{/* Add your logic here */}</div>;

@@ -1,21 +1,18 @@
 # Front-end Coding Challenge
 
-This is a simple Typescript app created with Create React App that points to our staging environment's API.
+This is a simple Typescript app created with Create React App.
 
-The challenge is designed not to test your GraphQL or Typescript knowledge, but to test how you can manipulate data into UI.
-
-## Forking Instructions
-
-1. Fork this repo
-2. Allow access to the user CREATENEWUSER
+The challenge is designed not to test Typescript knowledge, but to test how you can manipulate data into UI.
 
 ## Requirements
 
 Use the existing boilerplate to create a table that displays the user data from the API.
 
-> INSERT DESIGN
+![Manage Members Menu Closed](./images/Members Table Menu Closed.png)
 
-The table must be paginated and just simply display data. Don't worry about the ability to edit or delete a user; the menu options under the three dot icon are just for show.
+![Manage Members Menu Open](./images/Members Table Menu Open.png)
+
+The table must simply display all members in featured in `data.json` and include pagination. Don't worry about the ability to edit or delete a user; the menu options under the three dot icon are just for show.
 
 We encourage you not to spend over an hour on this assignment. To speed up development time, we've configured Material UI and set up the API interface.
 
